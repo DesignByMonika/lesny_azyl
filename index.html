@@ -3,279 +3,454 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Leśny Azyl - Odpocznij, Stwórz, Odkryj Rytm Natury</title>
+<title>Leśny Azyl – warsztaty i pobyty w lesie</title>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&family=Libre+Baskerville:wght@400;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
 <audio id="background-audio" autoplay loop>
-<source src="nature.mp3" type="audio/mp3">
+  <source src="nature.mp3" type="audio/mp3">
 </audio>
+
+<!-- ═══ HEADER ═══════════════════════════════════════════════════════════════ -->
 <header>
 <video autoplay muted loop playsinline>
-<source src="video/video.mp4" type="video/mp4">
+  <source src="video/video.mp4" type="video/mp4">
 </video>
 <nav>
-    <div class="container">
-        <div class="nav-background">
-            
-           <a href="#home" class="logo" id="logo-top-link">
-    <div class="leaf-container">
-        <span class="leaf-icon">🌿</span>
+  <div class="container">
+    <div class="nav-background">
+      <a href="#home" class="logo" id="logo-top-link">
+        <div class="leaf-container"><span class="leaf-icon">🌿</span></div>
+        <span>LEŚNY AZYL</span>
+      </a>
+      <div class="nav-right-content">
+        <div class="nav-links">
+          <ul>
+            <li><a href="#pobyty">Pobyty</a></li>
+            <li><a href="#warsztaty">Warsztaty</a></li>
+            <li><a href="#opinie">Opinie</a></li>
+            <li><a href="#galeria">Galeria</a></li>
+            <li><a href="#dojazd">Dojazd</a></li>
+            <li><a href="#faq">FAQ</a></li>
+            <li><a href="#kontakt">Kontakt</a></li>
+          </ul>
+        </div>
+        <div class="nav-controls">
+          <a id="toggle-sound-btn" class="icon-button muted" aria-label="Włącz muzykę"><i class="fas fa-volume-mute"></i></a>
+          <button id="menu-toggle-btn" aria-label="Menu" aria-expanded="false"><i class="fas fa-bars"></i></button>
+        </div>
+      </div>
     </div>
-    <span>LEŚNY AZYL</span> 
-</a>
-            
-            <div class="nav-right-content"> 
-                <div class="nav-links">
-                    <ul>
-                        <li><a href="#pobyty">Pobyty</a></li>
-                        <li><a href="#warsztaty">Warsztaty</a></li>
-                        <li><a href="#co-zabrac">Co zabrać</a></li>
-                        <li><a href="#kontakt">Kontakt</a></li>
-                    </ul>
-                </div>
-                
-                <div class="nav-controls">
-                    <a id="toggle-sound-btn" class="icon-button muted"><i class="fas fa-volume-mute"></i></a>
-                    <button id="menu-toggle-btn"><i class="fas fa-bars"></i></button>
-                </div>
-            </div>
-            </div>
-    </div>
+  </div>
 </nav>
 <div class="hero-content container">
-<h1>Leśny Azyl</h1>
-<p>Spokój · Muzyka · Rzemiosło · Rytm Natury</p>
-<a href="#rezerwacje" class="btn">Zarezerwuj Odpoczynek</a>
+  <h1>Leśny Azyl</h1>
+  <p>Spokój · Muzyka · Rzemiosło · Rytm Natury</p>
+  <a href="#rezerwacje" class="btn">Zarezerwuj Odpoczynek</a>
 </div>
 </header>
+
+<!-- ═══ FILOZOFIA ════════════════════════════════════════════════════════════ -->
 <section id="filozofia">
 <div class="container">
-<h2>Filozofia Ciszy</h2>
-<p>
-Leśny Azyl to ukryte schronienie w sercu lasu.
-To przestrzeń stworzona dla twórczego wyciszenia, gdzie szum drzew zastępuje miejski zgiełk.
-Tutaj natura dyktuje rytm.
-</p>
-<p>
-Inspirujemy się ideą <em>slow life</em>, autentycznym rzemiosłem i terapią kojącym dźwiękiem Steel Tongue Drum.
-Zapraszamy do odłączenia się, by móc prawdziwie połączyć: ze sobą, z tworzeniem i z pięknem natury.
-</p>
-<div class="logo-separator">
-<div class="leaf-container-lg">
-<span class="leaf-icon-lg">🌿</span>
-</div>
-<span>Leśny Azyl</span>
-</div>
+  <h2>Filozofia Ciszy</h2>
+  <p>Leśny Azyl to ukryte schronienie w sercu lasu. To przestrzeń stworzona dla twórczego wyciszenia, gdzie szum drzew zastępuje miejski zgiełk. Tutaj natura dyktuje rytm.</p>
+  <p>Inspirujemy się ideą <em>slow life</em>, autentycznym rzemiosłem i terapią kojącym dźwiękiem Steel Tongue Drum. Zapraszamy do odłączenia się, by móc prawdziwie połączyć: ze sobą, z tworzeniem i z pięknem natury.</p>
+  <div class="logo-separator">
+    <div class="leaf-container-lg"><span class="leaf-icon-lg">🌿</span></div>
+    <span>Leśny Azyl</span>
+  </div>
 </div>
 </section>
+
+<!-- ═══ POBYTY ════════════════════════════════════════════════════════════════ -->
 <section id="pobyty">
 <div class="container">
-<h2>Pakiety Pobytowe</h2>
-<div class="grid">
-<div class="card">
-<h3>Leśne Tchnienie - Dzień Uważności</h3>
-<ul>
-<li>wybrany warsztat: Steel Tongue Drum lub rzeźbienie łyżek</li>
-<li>spacer uważności po lesie</li>
-<li>wspólne biesiadowanie przy ognisku</li>
-<li>możliwość własnoręcznego zaparzenia herbaty ze świeżo zebranych ziół</li>
-</ul>
-</div>
-<div class="card">
-<h3>Leśna Regeneracja- Kilka Dni Roslinnego Spokoju</h3>
-<ul>
-<li>nocleg w warunkach campingowych (własny namiot/proste miejsce w wiacie)</li>
-<li>pełny pakiet warsztatów rzemieślniczych i muzycznych</li>
-<li>codzienne spacery i wieczorne ogniska</li>
-<li>samodzielne przygotowywanie posiłków w kuchni polowej</li>
-<li>możliwość własnoręcznego zaparzenia herbaty ze świeżo zebranych ziół</li>
-</ul>
-</div>
-</div>
+  <h2>Pakiety Pobytowe</h2>
+  <div class="grid">
+    <div class="card">
+      <div class="card-price-badge">od 180 zł / os.</div>
+      <h3>Leśne Tchnienie</h3>
+      <p class="card-subtitle">Dzień Uważności</p>
+      <ul>
+        <li>wybrany warsztat: Steel Tongue Drum lub rzeźbienie łyżek</li>
+        <li>spacer uważności po lesie</li>
+        <li>wspólne biesiadowanie przy ognisku</li>
+        <li>herbata ze świeżo zebranych ziół</li>
+      </ul>
+      <a href="#rezerwacje" class="btn card-btn">Zarezerwuj</a>
+    </div>
+    <div class="card">
+      <div class="card-price-badge">od 420 zł / os.</div>
+      <h3>Leśna Regeneracja</h3>
+      <p class="card-subtitle">Kilka Dni Roślinnego Spokoju</p>
+      <ul>
+        <li>nocleg w warunkach campingowych</li>
+        <li>pełny pakiet warsztatów rzemieślniczych i muzycznych</li>
+        <li>codzienne spacery i wieczorne ogniska</li>
+        <li>kuchnia polowa do samodzielnego gotowania</li>
+        <li>herbata ze świeżo zebranych ziół</li>
+      </ul>
+      <a href="#rezerwacje" class="btn card-btn">Zarezerwuj</a>
+    </div>
+  </div>
 </div>
 </section>
+
 <section class="parallax-snycerstwo"></section>
+
+<!-- ═══ WARSZTATY ════════════════════════════════════════════════════════════ -->
 <section id="warsztaty">
 <div class="container">
-<h2>Warsztaty</h2>
-<div class="grid">
-<div class="card">
-<div class="card-video">
-  <video muted loop playsinline preload="metadata">
-    <source src="video/drum_workshop.mp4" type="video/mp4">
-  </video>
-
-  <button class="video-play-btn" aria-label="Odtwórz wideo">
-  </button>
-</div>
-
-<h3>Steel Tongue Drum: Rytm Ciszy</h3>
-<p>
-Wprowadzenie do gry na instrumencie Steel Tongue Drum, nastawione na relaks i uważność.
-</p>
-</div>
-<div class="card">
-<img
-src="imges/drewno.png"
-class="card-image"
-alt="Ręcznie rzeźbiona łyżka i podstawka">
-<h3>Rzeźba w drewnie - Łyżka i Podstawki</h3>
-<p>
-Tradycyjne rzeźbienie drewnianych łyżek przy użyciu noża i dłut.
-Stworzysz także proste podstawki pod świece lub kadzidła.
-</p>
-</div>
-<div class="card">
-<img
-src="imges/ognisko.png"
-class="card-image"
-alt="Czas w lesie przy ognisku">
-<h3>Las i Odpoczynek</h3>
-<p>
-Spacery bez pośpiechu, bycie w naturze, ogień jako centrum spotkania.
-Czas na regenerację i prostą obecność.
-</p>
-</div>
-</div>
+  <h2>Warsztaty</h2>
+  <div class="grid">
+    <div class="card">
+      <div class="card-video">
+        <video muted loop playsinline preload="metadata">
+          <source src="video/drum_workshop.mp4" type="video/mp4">
+        </video>
+        <button class="video-play-btn" aria-label="Odtwórz wideo"></button>
+      </div>
+      <div class="card-price-badge">150 zł / os.</div>
+      <h3>Steel Tongue Drum: Rytm Ciszy</h3>
+      <p>Wprowadzenie do gry na instrumencie Steel Tongue Drum, nastawione na relaks i uważność.</p>
+    </div>
+    <div class="card">
+      <img src="imges/drewno.png" class="card-image" alt="Ręcznie rzeźbiona łyżka i podstawka">
+      <div class="card-price-badge">130 zł / os.</div>
+      <h3>Rzeźba w drewnie</h3>
+      <p>Tradycyjne rzeźbienie drewnianych łyżek przy użyciu noża i dłut. Stworzysz też proste podstawki pod świece lub kadzidła.</p>
+    </div>
+    <div class="card">
+      <img src="imges/ognisko.png" class="card-image" alt="Czas w lesie przy ognisku">
+      <div class="card-price-badge">80 zł / os.</div>
+      <h3>Las i Odpoczynek</h3>
+      <p>Spacery bez pośpiechu, bycie w naturze, ogień jako centrum spotkania. Czas na regenerację i prostą obecność.</p>
+    </div>
+  </div>
 </div>
 </section>
+
+<!-- ═══ REZERWACJE ════════════════════════════════════════════════════════════ -->
 <section id="rezerwacje">
 <div class="container">
-<h2>Rezerwacja</h2>
-<p>
-Poniżej znajdziesz kalendarz rezerwacji warsztatów i pobytów. Kliknij w datę, aby zobaczyć szczegóły.
-</p>
-<div class="calendar-wrapper">
-<div class="calendar-nav"> 
-<button id="prev-month" class="nav-btn" aria-label="Poprzedni miesiąc">
-<i class="fas fa-chevron-left"></i>
-</button>
-<h3 id="current-month-display">Miesiąc Rok</h3> 
-<button id="next-month" class="nav-btn" aria-label="Następny miesiąc">
-<i class="fas fa-chevron-right"></i>
-</button>
-</div>
-<div class="legend">
-<span class="legend-item has-event">Warsztat</span>
-<span class="legend-item has-stay">Nocleg</span>
-<span class="legend-item unavailable">Zajęte</span>
-</div>
-<div class="calendar" id="calendar-grid">
-<div class="day-name">Pn</div>
-<div class="day-name">Wt</div>
-<div class="day-name">Śr</div>
-<div class="day-name">Cz</div>
-<div class="day-name">Pt</div>
-<div class="day-name">So</div>
-<div class="day-name">Nd</div>
-</div>
-<div id="reservation-details" class="details-card" style="display:none;">
-<h4 style="margin-bottom: 0.5rem; text-align: left;">
-Wybrana Data: <span id="details-date"></span>
-</h4>
-<div id="details-workshop-info" style="margin-bottom: 0.5rem;">
-</div>
-<div id="details-stay-info">
-</div>
-</div>
-</div>
-<p style="margin-top: 2rem; max-width: 650px; text-align: center;">
-Ilość miejsc jest ograniczona. Zapraszamy do rezerwacji.
-</p>
-<p class="group-info">
-Grupy zorganizowane (powyżej 6 osób), prosimy o kontakt telefoniczny lub mailowy w celu indywidualnej wyceny i ustalenia dostępności.
-</p>
+  <h2>Rezerwacja</h2>
+  <p>Poniżej znajdziesz kalendarz rezerwacji warsztatów i pobytów. Kliknij w datę, aby zobaczyć szczegóły.</p>
+  <div class="calendar-wrapper">
+    <div class="calendar-nav">
+      <button id="prev-month" class="nav-btn" aria-label="Poprzedni miesiąc"><i class="fas fa-chevron-left"></i></button>
+      <h3 id="current-month-display">Miesiąc Rok</h3>
+      <button id="next-month" class="nav-btn" aria-label="Następny miesiąc"><i class="fas fa-chevron-right"></i></button>
+    </div>
+    <div class="legend">
+      <span class="legend-item has-event">Warsztat</span>
+      <span class="legend-item has-stay">Nocleg</span>
+      <span class="legend-item unavailable">Zajęte</span>
+    </div>
+    <div class="calendar" id="calendar-grid">
+      <div class="day-name">Pn</div><div class="day-name">Wt</div>
+      <div class="day-name">Śr</div><div class="day-name">Cz</div>
+      <div class="day-name">Pt</div><div class="day-name">So</div>
+      <div class="day-name">Nd</div>
+    </div>
+    <div id="reservation-details" class="details-card" style="display:none;">
+      <h4>Wybrana Data: <span id="details-date"></span></h4>
+      <div id="details-workshop-info"></div>
+      <div id="details-stay-info"></div>
+    </div>
+  </div>
+  <p style="margin-top:2rem;max-width:650px;text-align:center;">Ilość miejsc jest ograniczona. Zapraszamy do rezerwacji.</p>
+  <p class="group-info">Grupy zorganizowane (powyżej 6 osób) — prosimy o kontakt telefoniczny lub mailowy w celu indywidualnej wyceny.</p>
 </div>
 </section>
+
+<!-- ═══ OPINIE ════════════════════════════════════════════════════════════════ -->
+<section id="opinie">
+<div class="container">
+  <h2>Opinie Gości</h2>
+  <div class="opinions-slider">
+    <button id="prev-opinion" class="opinion-nav" aria-label="Poprzednia opinia"><i class="fas fa-chevron-left"></i></button>
+    <div class="opinions-track-wrapper">
+      <div class="opinions-track">
+
+        <div class="opinion-slide">
+          <div class="opinion-stars">★★★★★</div>
+          <blockquote>"Przyjechałam z głową pełną myśli, wyjechałam z łyżką i spokojem. Warsztat snycerstwa był czymś zupełnie wyjątkowym — skupienie na drewnie, zapachu lasu i ciszy. Wróciłam do siebie."</blockquote>
+          <div class="opinion-author">
+            <div class="opinion-avatar">A</div>
+            <div><strong>Anna K.</strong><span>Warszawa · maj 2025</span></div>
+          </div>
+        </div>
+
+        <div class="opinion-slide">
+          <div class="opinion-stars">★★★★★</div>
+          <blockquote>"Steel Tongue Drum to instrument, który daje natychmiastowy efekt wyciszenia. Nie myślałem, że w kilka godzin można poczuć się tak zakotwiczonym. Ognisko na koniec było wisienką na torcie."</blockquote>
+          <div class="opinion-author">
+            <div class="opinion-avatar">M</div>
+            <div><strong>Marek S.</strong><span>Kraków · czerwiec 2025</span></div>
+          </div>
+        </div>
+
+        <div class="opinion-slide">
+          <div class="opinion-stars">★★★★★</div>
+          <blockquote>"Przyjechałyśmy we dwie na weekend. Nocleg w namiocie, gwiazdy nad głową, poranna herbata z ziół zebranych poprzedniego dnia. Tego się nie zapomina. Wrócimy na pewno."</blockquote>
+          <div class="opinion-author">
+            <div class="opinion-avatar">K</div>
+            <div><strong>Kasia i Marta</strong><span>Wrocław · sierpień 2025</span></div>
+          </div>
+        </div>
+
+        <div class="opinion-slide">
+          <div class="opinion-stars">★★★★☆</div>
+          <blockquote>"Warsztat ziołowy przekroczył moje oczekiwania — wiedza o roślinach, spokojny spacer po lesie, a wieczorem ogień i rozmowy z innymi uczestnikami. Jedyne, czego mi brakowało, to więcej dni."</blockquote>
+          <div class="opinion-author">
+            <div class="opinion-avatar">P</div>
+            <div><strong>Paweł W.</strong><span>Gdańsk · lipiec 2025</span></div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <button id="next-opinion" class="opinion-nav" aria-label="Następna opinia"><i class="fas fa-chevron-right"></i></button>
+  </div>
+  <div class="opinion-dots">
+    <button class="opinion-dot active" aria-label="Opinia 1"></button>
+    <button class="opinion-dot" aria-label="Opinia 2"></button>
+    <button class="opinion-dot" aria-label="Opinia 3"></button>
+    <button class="opinion-dot" aria-label="Opinia 4"></button>
+  </div>
+</div>
+</section>
+
+<!-- ═══ GALERIA ═══════════════════════════════════════════════════════════════ -->
+<section id="galeria">
+<div class="container">
+  <h2>Galeria</h2>
+  <div class="gallery-grid">
+    <div class="gallery-item" data-caption="Warsztat Steel Tongue Drum" data-full="imges/drum_full.jpg">
+      <img src="imges/drewno.png" alt="Warsztat Steel Tongue Drum">
+      <div class="gallery-overlay"><i class="fas fa-expand"></i></div>
+    </div>
+    <div class="gallery-item gallery-item--wide" data-caption="Wieczorne ognisko" data-full="imges/ognisko_full.jpg">
+      <img src="imges/ognisko.png" alt="Wieczorne ognisko">
+      <div class="gallery-overlay"><i class="fas fa-expand"></i></div>
+    </div>
+    <div class="gallery-item" data-caption="Snycerstwo w lesie" data-full="imges/snycerstwo_full.jpg">
+      <img src="imges/snycerstwo.png" alt="Snycerstwo w lesie">
+      <div class="gallery-overlay"><i class="fas fa-expand"></i></div>
+    </div>
+    <div class="gallery-item" data-caption="Handpan – dźwięki natury" data-full="imges/handpan_full.jpg">
+      <img src="imges/handpan.png" alt="Handpan w lesie">
+      <div class="gallery-overlay"><i class="fas fa-expand"></i></div>
+    </div>
+    <div class="gallery-item gallery-item--wide" data-caption="Las o świcie" data-full="imges/las_full.jpg">
+      <img src="imges/las.png" alt="Las o świcie">
+      <div class="gallery-overlay"><i class="fas fa-expand"></i></div>
+    </div>
+  </div>
+</div>
+</section>
+
+<!-- ═══ LIGHTBOX ══════════════════════════════════════════════════════════════ -->
+<div id="lightbox" class="modal-overlay lightbox-overlay">
+  <button id="lightbox-close" class="lightbox-close" aria-label="Zamknij">&times;</button>
+  <button id="lightbox-prev" class="lightbox-nav lightbox-prev" aria-label="Poprzednie"><i class="fas fa-chevron-left"></i></button>
+  <div class="lightbox-content">
+    <img id="lightbox-img" src="" alt="">
+    <p id="lightbox-caption"></p>
+  </div>
+  <button id="lightbox-next" class="lightbox-nav lightbox-next" aria-label="Następne"><i class="fas fa-chevron-right"></i></button>
+</div>
+
+<section class="parallax-handpan"></section>
+
+<!-- ═══ CO ZABRAĆ ════════════════════════════════════════════════════════════ -->
 <section id="co-zabrac">
 <div class="container">
-<h2>Co zabrać?</h2>
-<ul>
-<li>ubrania na każdą pogodę</li>
-<li>buty do lasu</li>
-<li>śpiwór i karimatę (pobyty kilkudniowe)</li>
-<li>latarkę lub czołówkę</li>
-<li>jedzenie na czas pobytu (sklep oddalony o 30 km)</li>
-<li>kubek, menażkę, sztućce</li>
-</ul>
-<p>
-Jest możliwość własnoręcznego zaparzenia gorącej herbaty dla wszystkich uczestników.
-</p>
-<div class="section-separator"></div>
-<p>
-Na terenie obiektu dostępna jest również prosta kuchnia polowa do samodzielnego przygotowywania posiłków. Jest ona czynna głównie w sezonie wiosenno-letnim.
-</p>
-<p class="gastronomy-note">
-Na terenie ośrodka nie jest prowadzona działalność gastronomiczna. Należy zaopatrzyć się w prowiant we własnym zakresie. (Najbliższy sklep - ok. 30 km)
-</p>
+  <h2>Co zabrać?</h2>
+  <ul>
+    <li>ubrania na każdą pogodę</li>
+    <li>buty do lasu</li>
+    <li>śpiwór i karimatę (pobyty kilkudniowe)</li>
+    <li>latarkę lub czołówkę</li>
+    <li>jedzenie na czas pobytu</li>
+    <li>kubek, menażkę, sztućce</li>
+  </ul>
+  <p>Jest możliwość własnoręcznego zaparzenia gorącej herbaty dla wszystkich uczestników.</p>
+  <div class="section-separator"></div>
+  <p>Na terenie obiektu dostępna jest również prosta kuchnia polowa do samodzielnego przygotowywania posiłków, czynna głównie w sezonie wiosenno-letnim.</p>
+  <p class="gastronomy-note">Na terenie ośrodka nie jest prowadzona działalność gastronomiczna. Należy zaopatrzyć się w prowiant we własnym zakresie. Najbliższy sklep znajduje się ok. 30 km od ośrodka.</p>
 </div>
 </section>
-<section class="parallax-handpan"></section>
+
+<!-- ═══ DOJAZD ════════════════════════════════════════════════════════════════ -->
+<section id="dojazd">
+<div class="container">
+  <h2>Jak dojechać?</h2>
+  <div class="dojazd-grid">
+    <div class="dojazd-info">
+      <div class="dojazd-item">
+        <i class="fas fa-car"></i>
+        <div>
+          <h4>Samochodem</h4>
+          <p>Z Warszawy: trasa S8 w kierunku Białegostoku, zjazd Wyszków, dalej drogą lokalną ok. 15 km. Łącznie ok. 1,5 h jazdy. Współrzędne GPS: <strong>52.8312° N, 21.4567° E</strong></p>
+        </div>
+      </div>
+      <div class="dojazd-item">
+        <i class="fas fa-train"></i>
+        <div>
+          <h4>Pociągiem</h4>
+          <p>Pociąg z Warszawy Centralnej do Wyszkowa (ok. 1,5 h), następnie taxi lub umówiony transport lokalny (ok. 20 min). Chętnie pomożemy z organizacją dojazdu — napisz do nas.</p>
+        </div>
+      </div>
+      <div class="dojazd-item">
+        <i class="fas fa-parking"></i>
+        <div>
+          <h4>Parking</h4>
+          <p>Na miejscu dostępny bezpłatny parking leśny dla ok. 15 samochodów. Przy dużych grupach prosimy o wcześniejsze poinformowanie.</p>
+        </div>
+      </div>
+      <div class="dojazd-item">
+        <i class="fas fa-map-marker-alt"></i>
+        <div>
+          <h4>Adres</h4>
+          <p>Leśny Azyl, Leśna 1, 07-200 Wyszków (adres przykładowy — zastąp własnym)</p>
+        </div>
+      </div>
+    </div>
+    <div class="dojazd-map">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2490.0!2d22.7540!3d51.2180!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNTHCsDEzJzA0LjgiTiAyMsKwNDUnMTQuNCJF!5e0!3m2!1spl!2spl!4v1700000000000!5m2!1spl!2spl"
+        width="100%" height="350" style="border:0; border-radius:8px; filter:invert(90%) hue-rotate(140deg) brightness(0.85) contrast(0.9);"
+        allowfullscreen="" loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+        title="Mapa dojazdu – Suszka, Lubelskie">
+      </iframe>
+    </div>
+  </div>
+</div>
+</section>
+
+<!-- ═══ FAQ ═══════════════════════════════════════════════════════════════════ -->
+<section id="faq">
+<div class="container">
+  <h2>Często Zadawane Pytania</h2>
+  <div class="faq-list">
+
+    <div class="faq-item">
+      <button class="faq-question">Czy potrzebuję wcześniejszego doświadczenia muzycznego lub rzemieślniczego? <i class="fas fa-chevron-down"></i></button>
+      <div class="faq-answer"><p>Absolutnie nie. Wszystkie warsztaty są zaprojektowane dla zupełnych początkujących. Naszym celem jest proces i uważność, nie gotowy produkt czy techniczna perfekcja. Przychodzi się z otwartością, resztą zajmiemy się my.</p></div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question">Co w przypadku deszczu? Czy warsztaty się odbywają? <i class="fas fa-chevron-down"></i></button>
+      <div class="faq-answer"><p>Tak — mamy zadaszoną wiatę warsztatową oraz przestrzeń pod drzewami, która sprawdza się nawet przy słabszym deszczu. Deszczowy las ma swój wyjątkowy klimat. W przypadku ekstremalnych warunków pogodowych kontaktujemy uczestników z co najmniej 24-godzinnym wyprzedzeniem.</p></div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question">Ile osób bierze udział w jednym warsztacie? <i class="fas fa-chevron-down"></i></button>
+      <div class="faq-answer"><p>Grupy są celowo małe — od 6 do 12 osób w zależności od rodzaju warsztatu. Zależy nam na tym, by każdy uczestnik miał przestrzeń i uwagę prowadzącego.</p></div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question">Czy jest możliwość przyjazdu z dziećmi? <i class="fas fa-chevron-down"></i></button>
+      <div class="faq-answer"><p>Warsztaty są przeznaczone dla dorosłych (18+). Dzieci powyżej 12 lat mogą uczestniczyć w wybranych zajęciach pod warunkiem obecności rodzica lub opiekuna. Prosimy o wcześniejszy kontakt, by ustalić szczegóły.</p></div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question">Jak wygląda nocleg? Czy muszę mieć własny namiot? <i class="fas fa-chevron-down"></i></button>
+      <div class="faq-answer"><p>Nocleg odbywa się we własnym namiocie lub w prostej, zadasznej wiacie z materacami (dostępna dla 4–6 osób, rezerwacja konieczna). Posiadamy sanitariaty i dostęp do bieżącej wody. Klimat jest intencjonalnie prosty — bez elektryczności w strefach noclegowych.</p></div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question">Czy mogę odwołać rezerwację? <i class="fas fa-chevron-down"></i></button>
+      <div class="faq-answer"><p>Tak. Odwołania do 7 dni przed terminem — pełny zwrot. Od 3 do 7 dni — 50% zwrotu. Poniżej 3 dni — brak zwrotu, ale możliwe przeniesienie na inny termin (w zależności od dostępności).</p></div>
+    </div>
+
+  </div>
+</div>
+</section>
+
+<!-- ═══ KONTAKT ════════════════════════════════════════════════════════════════ -->
 <section id="kontakt">
 <div class="container">
-<h2>Kontakt</h2>
-<p>
-Jeśli czujesz, że to miejsce jest dla Ciebie - odezwij się.
-</p>
-<ul id="contact-list">
-<li><a href="mailto:kontakt@lesnyazyl.pl">Email: kontakt@lesnyazyl.pl</a></li>
-<li><a href="tel:000000000">Telefon: 000 000 000</a></li>
-</ul>
+  <h2>Kontakt</h2>
+  <p>Jeśli czujesz, że to miejsce jest dla Ciebie — odezwij się.</p>
+  <ul id="contact-list">
+    <li><a href="mailto:kontakt@lesnyazyl.pl">Email: kontakt@lesnyazyl.pl</a></li>
+    <li><a href="tel:000000000">Telefon: 000 000 000</a></li>
+  </ul>
+
+  <div class="contact-form-wrapper">
+    <h3>Napisz do nas</h3>
+    <form id="contact-form" action="https://formspree.io/f/TWOJ_KOD" method="POST">
+      <div class="form-row">
+        <div class="form-group">
+          <label for="form-name">Imię i nazwisko</label>
+          <input type="text" id="form-name" name="name" required placeholder="Anna Kowalska">
+        </div>
+        <div class="form-group">
+          <label for="form-email">Email</label>
+          <input type="email" id="form-email" name="email" required placeholder="anna@example.pl">
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="form-subject">Temat</label>
+        <select id="form-subject" name="subject">
+          <option value="rezerwacja">Rezerwacja warsztatu</option>
+          <option value="pobyt">Pobyt kilkudniowy</option>
+          <option value="grupa">Grupa zorganizowana</option>
+          <option value="pytanie">Pytanie ogólne</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="form-message">Wiadomość</label>
+        <textarea id="form-message" name="message" rows="5" required placeholder="Cześć, jestem zainteresowana/zainteresowany..."></textarea>
+      </div>
+      <button type="submit" class="btn">Wyślij Wiadomość</button>
+      <p id="form-status" class="form-status" style="display:none;"></p>
+    </form>
+  </div>
 </div>
 </section>
+
+<!-- ═══ MODAL ŹRÓDŁA ══════════════════════════════════════════════════════════ -->
 <div id="modal-zrodla" class="modal-overlay">
 <div class="modal-content">
-<a href="#" id="close-zrodla-modal" class="close-btn" title="Zamknij">&times;</a>
-<h3>Źródła i Autorzy</h3>
-<p>
-Podziękowania dla twórców, którzy udostępnili swoje dzieła, oraz narzędziom AI.
-</p>
-<ul class="zrodla-lista">
-<li>
-- Wideo w nagłówku (`video.mp4`): Video by <a href="https://pixabay.com/users/matthias_groeneveld-4535957/?utm_source=link-attribution&utm_medium=referral&utm_campaign=video&utm_content=189813">Matthias Groeneveld</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=video&utm_content=189813">Pixabay</a>
-</li>
-<li>
-- Wideo dla warsztatu Steel Drum: Video by <a href="https://www.pexels.com/@antonishkraba/" target="_blank">Antoni Shkraba Studio</a> from <a href="https://www.pexels.com/video/female-playing-a-steel-tongue-drum-7580179/" target="_blank">Pexels</a>
-</li>
-<li>
-- Dźwięk lasu (`nature.mp3`): Sound Effect by <a href="https://pixabay.com/users/empressnefertitimumbi-38087191/?utm_source=link-attribution&utm_medium=referral&utm_campaign=music&utm_content=217212">Empress-Kathryne Nefertiti-Mumbi</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=music&utm_content=217212">Pixabay</a>
-</li>
-<li>
-- Dodatkowy efekt dźwiękowy (bebęnki): Sound Effect by <a href="https://pixabay.com/users/freesound_community-46691455/?utm_source=link-attribution&utm_medium=referral&utm_campaign=music&utm_content=48394">freesound_community</a> from <a href="https://pixabay.com/sound-effects//?utm_source=link-attribution&utm_medium=referral&utm_campaign=music&utm_content=48394">Pixabay</a>
-</li>
-<li>- Grafiki Produktowe (np. snycerstwo, Steel Tongue Drum): Obrazy wygenerowane przy użyciu narzędzi sztucznej inteligencji (AI).</li>
-<li>- Ikona Głośnika:** Font Awesome (licencja CC BY 4.0).</li>
-</ul>
-<p style="text-align: center; margin-top: 1.5rem;">
-Niniejsza lista została utworzona w celu spełnienia wymogów licencyjnych użytych materiałów.
-</p>
+  <a href="#" id="close-zrodla-modal" class="close-btn" title="Zamknij">&times;</a>
+  <h3>Źródła i Autorzy</h3>
+  <p>Podziękowania dla twórców, którzy udostępnili swoje dzieła, oraz narzędziom AI.</p>
+  <ul class="zrodla-lista">
+    <li>Wideo w nagłówku: Video by <a href="https://pixabay.com/users/matthias_groeneveld-4535957/">Matthias Groeneveld</a> from Pixabay</li>
+    <li>Wideo warsztatu Steel Drum: Video by <a href="https://www.pexels.com/@antonishkraba/">Antoni Shkraba Studio</a> from Pexels</li>
+    <li>Dźwięk lasu: Sound Effect by <a href="https://pixabay.com/users/empressnefertitimumbi-38087191/">Empress-Kathryne Nefertiti-Mumbi</a> from Pixabay</li>
+    <li>Efekt dźwiękowy (bębenki): Sound Effect by <a href="https://pixabay.com/users/freesound_community-46691455/">freesound_community</a> from Pixabay</li>
+    <li>Grafiki produktowe: Obrazy wygenerowane przy użyciu narzędzi AI.</li>
+    <li>Ikony: Font Awesome (licencja CC BY 4.0).</li>
+  </ul>
+  <p style="text-align:center;margin-top:1.5rem;">Lista utworzona w celu spełnienia wymogów licencyjnych.</p>
 </div>
 </div>
+
+<!-- ═══ FOOTER ════════════════════════════════════════════════════════════════ -->
 <footer>
 <div class="container footer-content-primary">
-<span>Leśne Utulenie · Płomień Ogniska · Cisza</span>
-<a href="#" class="footer-logo-center logo" aria-label="Przejdź na górę strony">
-<div class="leaf-container">
-<span class="leaf-icon">🌿</span>
+  <span>Leśne Utulenie · Płomień Ogniska · Cisza</span>
+  <a href="#" class="footer-logo-center logo" aria-label="Przejdź na górę strony">
+    <div class="leaf-container"><span class="leaf-icon">🌿</span></div>
+    <span>Leśny Azyl</span>
+  </a>
+  <a href="#" id="open-zrodla-modal" class="footer-link">Źródła / Artyści</a>
 </div>
-<span>Leśny Azyl</span>
-</a>
-<a href="#" id="open-zrodla-modal" class="footer-link">Źródła / Artyści</a>
-</div>
-<div class="author-info container"> <a
-href="mailto:monika@pixiart.pl?subject=Wiadomość ze strony Pixiart"
-class="author-link-tile" 
->
-<p>monika@pixiart.pl</p>
-</a>
-<a href="https://portfolio.pixiart.pl" target="_blank" class="author-link-tile">
-<p>portfolio.pixiart.pl</p>
-</a>
+<div class="author-info container">
+  <a href="mailto:monika@pixiart.pl?subject=Wiadomość ze strony Pixiart" class="author-link-tile"><p>monika@pixiart.pl</p></a>
+  <a href="https://portfolio.pixiart.pl" target="_blank" class="author-link-tile"><p>portfolio.pixiart.pl</p></a>
 </div>
 </footer>
+
+<script src="events.js"></script>
 <script src="scripts.js"></script>
 </body>
 </html>
